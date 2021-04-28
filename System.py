@@ -145,16 +145,16 @@ def load_data(name, channelArray, data_factor):
 #     laser_pulse = 260e-12
     sys.stdout.flush()
 #     all_ttags = load("./DarpaQKD/"+name+"Ttags.npy")
-#     all_ttags = load("./DarpaQKD/"+name+"TtagsREBINNED.npy")
-    all_ttags = load("./DarpaQKD/" + name + "TtagsREBINNEDfull.npy")
+    all_ttags = load("./DarpaQKD/"+name+"TtagsREBINNED.npy")
+#    all_ttags = load("./DarpaQKD/" + name + "TtagsREBINNEDfull.npy")	#HL
 #     all_ttags = load("./DarpaQKD/"+name+"TtagsBrightAttempt1.npy")
 #     all_ttags = load("./DarpaQKD/"+name+"TtagsBrightAttempt2.npy")
 #     all_ttags = load("./DarpaQKD/"+name+"TtagsBrightAttempt3.npy")
 
 #     all_channels = load("./DarpaQKD/"+name+"Channels.npy")
 
-#     all_channels = load("./DarpaQKD/"+name+"ChannelsREBINNED.npy")
-    all_channels = load("./DarpaQKD/" + name + "ChannelsREBINNEDfull.npy")
+    all_channels = load("./DarpaQKD/"+name+"ChannelsREBINNED.npy")
+#    all_channels = load("./DarpaQKD/" + name + "ChannelsREBINNEDfull.npy")	#HL
 
 #     all_channels = load("./DarpaQKD/"+name+"ChannelsBrightAttempt1.npy")
 #     all_channels = load("./DarpaQKD/"+name+"ChannelsBrightAttempt2.npy")
@@ -460,7 +460,8 @@ if __name__ == '__main__':
     
 #   Uncomment if raw text file has to be processed first
 #     load_save_raw_file(raw_file_dir, alice_channels, bob_channels)
-    
+#HL: uncommented
+    load_save_raw_file("./DarpaQKD/Alice1_Bob1_with_delaysREBINNED.txt", alice_channels, bob_channels)
     
     set_printoptions(edgeitems=20)
     resolution = 260e-12
@@ -750,4 +751,5 @@ if __name__ == '__main__':
     
     end = time.time()
     print "MAIN: DUARTION", (end - start)
+ 
     
