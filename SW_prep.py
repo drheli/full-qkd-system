@@ -13,7 +13,8 @@ from scipy.sparse import *
 from scipy import *
 import random as randmodule
 from random import *
-from scipy.weave import *
+#from scipy.weave import *
+from scipy import *	#HL
 from matplotlib.pyplot import *
 #RANDOMDATA
 #Creates a random sequence of length 'amt' with an alphabet of 'alph'

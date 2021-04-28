@@ -41,7 +41,8 @@ from scipy.optimize import curve_fit
 from scipy.misc import *
 import ttag
 import sys
-from scipy.weave import inline
+#from scipy.weave import inline
+from weave import inline	#HL
 #import graphs
 from SW_prep import *
 from SlepianWolf import *
