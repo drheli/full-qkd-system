@@ -1,0 +1,3 @@
+[submodule "KMS/alice2bob"]
+	path = KMS/alice2bob
+	url = git@github.com:drheli/qkd-net.git
